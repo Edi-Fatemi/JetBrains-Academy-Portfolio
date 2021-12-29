@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="#" id="nav-logo" class="nav-logo">Ed<span>i</span></a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                </ul>
+            </div>
+
+            <div class="toggle-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <div class="hamburger">
+        <ul class="hamburger-list">
+            <li class="hamburger-item"><a href="#home" class="hamburger-link">Home</a></li>
+            <li class="hamburger-item"><a href="#about" class="hamburger-link">About</a></li>
+            <li class="hamburger-item"><a href="#portfolio" class="hamburger-link">Portfolio</a></li>
+            <li class="hamburger-item"><a href="#contacts" class="hamburger-link">Contacts</a></li>
+        </ul>
+    </div>
+    <section id="home" class="section home-section">
+        <div class="home-container">
+            <h1 class="section-title"><span>Edi,</span> Front-End Developer</h1>
+        </div>
+    </section>
+    <section id="about" class="section about-section">
+          <div class="about-imgBox">
+              <img src="images/image.jpg" alt="image" class="about-bg-image">
+              <img src="images/person.jpeg" alt="My image" class="person-image">
+          </div>
+
+           <div class="about-data">
+               <h2 class="about-title">About me</h2>
+               <p class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Velit, nam deleniti.Corrupti, quo? Ex inventore enim reiciendis
+                   perferendis exercitationem possimus quis eius.
+                   Veniam suscipit nostrum possimus deserunt nobis in magni?
+               </p>
+           </div>
+    </section>
+    <section id="portfolio" class="section portfolio-section">
+            <h2 class="portfolio-title">Portfolio</h2>
+        <div class="portfolio-container container">
+            <div class="portfolio-data">
+            <img src="images/project1.png" alt="My first project image" class="portfolio-image">
+            <p class="portfolio-description">Flashcards</p>
+            <button type="button" class="open-window" data-target="#flashCards-modal">Flash Cards</button>
+            </div>
+            <div class="portfolio-data">
+            <img src="images/project2.png" alt="My second project image" class="portfolio-image">
+            <p class="portfolio-description">Virtual Piano</p>
+            <button type="button" class="open-window" data-target="#virtualPiano-modal">Virtual Piano</button>
+            </div>
+        </div>
+    </section>
+    <section id="contacts" class="section contacts-section">
+        <h2 class="contacts-title">Contacts</h2>
+        <div class="contacts-container container">
+            <p class="contacts-description">You can contact me at : <a href="#" class="contacts-link">example@gmail.come</a>.</p>
+            <p class="contacts-description">or phone number - <a href="#" class="contacts-link">12345678910</a></p>
+            <div class="social-media">
+                <a href="#" class="social-media-link">
+                    <img src="images/github.svg" alt="Github image" width="100px" loading="lazy">
+                </a>
+                <a href="#" class="social-media-link">
+                    <img src="images/instagram.svg" alt="Instagram image" width="100px" loading="lazy">
+                </a>
+                <a href="#" class="social-media-link">
+                    <img src="images/twitter.svg" alt="Twitter image" width="100px" loading="lazy">
+                </a>
+                <a href="#" class="social-media-link">
+                    <img src="images/facebook.svg" alt="Facebook image" width="100px" loading="lazy">
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <h3 class="footer-author">Edi-Fatemi</h3>
+        <p class="footer-date">2021</p>
+    </footer>
+
+    <div class="window" id="flashCards-modal">
+        <h1>FlashCards</h1>
+        <p>You can see the project at the following  link: <a href="https://github.com/Edi-Fatemi/Virtual-Piano">Virtual Piano</a></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos distinctio eius esse fugit natus quasi? Corporis culpa doloremque nostrum quidem quos rem. Aliquam, exercitationem itaque labore nihil obcaecati quos!</p>
+        <button type="button" class="close-window" data-target="#flashCards-modal">Close</button>
+    </div>
+    <div class="window" id="virtualPiano-modal">
+        <h1>Virtual Piano</h1>
+        <p>You can see the project at the following link: <a href="https://github.com/Edi-Fatemi/FlashCards">flashCards</a></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, ea error natus nihil non optio qui quis voluptate. Ad aliquid eos facere harum laborum libero quo repellat sapiente sunt voluptatem.</p>
+        <button type="button" class="close-window" data-target="#virtualPiano-modal">Close</button>
+    </div>
+
+    <div class="modal-overlay"></div>
+
+
+</body>
+</html>
