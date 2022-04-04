@@ -1,1 +1,1 @@
-# Simple training personal Portfolio
+# Simple personal Portfolio
